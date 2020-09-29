@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-    <meta charset="utf-8">
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
@@ -112,15 +109,21 @@
         </div>
         <!-- snsボタン終了 -->
         <h2 class="alert alert-success">アマゾン検索url生成</h2>
+        <input type="search" class="form-control mr-sm-2" id="searchtext" placeholder="ベースurl..." aria-label="ベースurl...">
+
         <p>価格、日付、出版社などで検索条件を絞る</p>
-                <div class="form-inline my-2 my-lg-0">
-                    <input type="search" class="form-control mr-sm-2" id="searchtext" placeholder="検索..." aria-label="検索...">
-                    <button type="submit" class="btn btn-outline-success my-2 my-sm-0"  id="search">検索</button>
-                </div>
+        <div class="form-inline my-2 my-lg-0">
+            <input type="search" class="form-control mr-sm-2" id="searchtext" placeholder="検索ワード..." aria-label="検索ワード...">
+            <input type="search" class="form-control mr-sm-2" id="publisher" placeholder="出版社." aria-label="出版社...">
+            <input type="search" class="form-control mr-sm-2" id="lowprice" placeholder="円から..." aria-label="円から...">
+            <input type="search" class="form-control mr-sm-2" id="highprice" placeholder="円まで" aria-label="円まで">
+            <button type="submit" class="btn btn-outline-success my-2 my-sm-0" id="search">検索</button>
+        </div>
         <h2 class="alert alert-success">日付の選択</h2>
-            <div class="row">
-        <div class='col-sm-6'>
-            <input type='text' class="form-control" id='datetimepicker1' placeholder="YYYYMMDD" />
+        <div class="row">
+            <div class='col-sm-6'>
+                <input type='text' class="form-control" id='datetimepicker1' placeholder="YYYYMMDD" />
+            </div>
         </div>
     </div>
     <link rel="stylesheet" href="css/calendar.css">
